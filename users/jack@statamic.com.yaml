@@ -1,0 +1,9 @@
+name: 'Jack McDade'
+super: true
+id: cb053454-7930-41fe-9fe1-ea1cb2c5c7a5
+password_hash: $2y$10$5eIZLC0tV4W4MX2oKFIfK.VIBDe6x6q3annBR//UlIuak1hDiBNXO
+preferences:
+  favorites:
+    -
+      name: FAQs
+      url: collections/pages/entries/b2246322-c215-4acb-b4d0-97ca7f1207fa

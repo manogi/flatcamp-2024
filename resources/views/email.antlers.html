@@ -1,0 +1,414 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="https://use.typekit.net/ysf3wph.css">
+  <title>Statamic</title>
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 100%;
+      line-height: 1.5;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    html {
+      background: #FEF3E2;
+    }
+
+    body {
+      -webkit-text-size-adjust: none;
+      width: 100% !important;
+      height: 100%;
+      color: #3D4734;
+      background: #FEF3E2;
+    }
+
+    a {
+      color: #FF269E;
+    }
+
+    .btn-primary {
+      text-decoration: none;
+      color: #3D4734;
+      background-color: #191A1B;
+      border: solid #191A1B;
+      border-width: 10px 20px;
+      line-height: 1.75;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      display: inline-block;
+      border-radius: 3px;
+    }
+
+    .btn-secondary {
+      text-decoration: none;
+      color: #3D4734;
+      background-color: #aaa;
+      border: solid #aaa;
+      border-width: 10px 20px;
+      line-height: 1.75;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      display: inline-block;
+      border-radius: 3px;
+    }
+
+    .block {
+      display: block;
+    }
+
+    .last {
+      margin-bottom: 0;
+    }
+
+    .first {
+      margin-top: 0;
+    }
+
+    .padding {
+      padding: 10px 0;
+    }
+
+    .push-down {
+      padding-top: 30px;
+    }
+
+    .answered {
+      color: #3daa5e;
+    }
+
+    .w-full {
+      width: 100%;
+    }
+
+    .subtext {
+      font-size: 12px;
+      color: #6A6A6A;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    table.body-wrap {
+      width: 100%;
+      padding: 0 30px;
+    }
+
+    table.body-wrap .container.header {
+      border: none;
+      box-shadow: none;
+    }
+
+    .rounded {
+      border-radius: 6px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    table.footer-wrap {
+      width: 100%;
+      clear: both !important;
+    }
+
+    .footer-wrap .container p {
+      font-size: 12px;
+      color: #999;
+    }
+
+    table.footer-wrap a {
+      color: #3D4734;
+      text-decoration: underline;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      line-height: 1.2;
+      margin-bottom: 15px;
+      color: #3D4734;
+      margin: 10px 0;
+      font-weight: 700;
+    }
+
+    h1 a,
+    h2 a,
+    h3 a,
+    h4 a,
+    h5 a,
+    h6 a {
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 72px;
+      font-style: italic;
+      font-weight: 900;
+    }
+
+    h1 small {
+      font-size: 24px;
+      display: block;
+      line-height: 1;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 1.5em;
+    }
+
+    h3 {
+      font-size: 21px;
+    }
+
+    h3 small {
+      font-size: 16px;
+    }
+
+    p,
+    ul,
+    ol {
+      color: #675F53;
+      margin-bottom: 24px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.75;
+    }
+
+    p b, p strong {
+      color: #3D4734;
+    }
+
+    ul li,
+    ol li {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      list-style-position: outside;
+    }
+
+    .avatar,
+    .rounded-full {
+      border-radius: 9999px;
+    }
+
+    .container {
+      display: block !important;
+      max-width: 600px !important;
+      margin: 0 auto !important;
+      clear: both !important;
+    }
+
+    .body-wrap .container {
+      padding: 0px;
+    }
+
+    .p-30 {
+      padding: 30px;
+    }
+
+    .content {
+      max-width: 600px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .content table {
+      width: 100%;
+    }
+
+    .content img {
+      margin-bottom: 30px;
+    }
+
+    .shadow {
+      box-shadow: 3px 3px 0 #002f3c;
+      border: 1px solid #002f3c;
+    }
+
+  </style>
+</head>
+
+<body>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td bgcolor="#FEF3E2">
+        <!-- body -->
+        <table class="body-wrap">
+          <tr>
+            <td></td>
+            <td class="container header">
+              <!-- content -->
+              <div class="content">
+
+                <table>
+                  <tr>
+                    <td align="center" style="padding-top:30px;padding-bottom:30px; position: relative;">
+
+                      <div>
+                        <a href="https://statamic.com">
+                          <img src="https://statamic.com/assets/branding/Statamic-Logo-Wordmark-Blackish.png" height="30" style="margin-bottom: 0px; padding: 30px 0;" alt="Statamic">
+                        </a>
+                      </div>
+                    <img src="https://flatcamp.com/assets/one-week.png" alt="One Week Until Flat Camp" width="512" style="margin-top: 30px;">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- /content -->
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="container">
+              <div class="content">
+                {{ markdown:indent }}
+
+                Hey there!
+
+                Can you believe Flat Camp is just a week away? I'm excited to load up my car full of swag and head up into the mountains.
+
+                I wanted to send you a quick email to make sure you're as prepared for the trip as possible. I've included every single important detail I can think of below, but if you have any questions, just reply to this email and I'll get right back to you.
+
+                ## The Flat Camp Ethos
+
+                I hope I've been clear as to what Flat Camp is and what it isn't, but just in case you're jumping in last minute (I know there were a few late sign-ups and ticket swaps), here's a quick rundown.
+
+                **Flat Camp is a non-formal event.** There's a very loose schedule, no formal classroom style presentations or workshops, and hopefully no pressure on anyone. It's a chance to get away from the grind, enjoy nature and the comradery of other folks in the Statamic community — including the entire dev and support team.
+
+                Most knowledge transferred in a formal, classroom-style environment only has a 6% retention rate. That feels a bit like a waste of time to us, considering all the other things we could do with the same time. So instead we want to create an environment where you'll remember _96%_ of everything that happened. And we'll do that through conversations, activities, going deeper, getting into practical application in small groups and one-on-ones and simply just _being around each other_, allowing conversations and topics to emerge organically.
+
+                ## Expectations
+
+                First off, this event is a brand new thing. While we've put a lot of work into it, we've never run an event like this before so we're all in this together. If you can roll with a few inevitable hiccups and surprises, I'm positive you'll have a great time. I'll be arriving a day early and will do my best to scope everything out and look for any potential issues. If I need to run to the nearest Walmart for something, I'll do it.
+
+                ## Food
+
+                If you can eat or drink it, we have it covered. We'll have 3 meals a day catered for us and the menu they put together for us looks pretty good. Everyone's dietary needs should be covered, and I'll personally be bringing a few extra things just in case they screw up.
+
+                We'll have a snack table with chips, fruit, jerky, nuts, granola bars (sponsored by [Ploi.io](https://ploi.io?ref=flatcamp.com)), and other things to munch on throughout the day. We'll also have a fridge stocked with beer, water, and soda. And I know everyone is worried about this because I've gotten a half-dozen DMs about it in the last 3 days — we'll have coffee and tea available all day long.
+
+                During our time we'll have a wine tasting from local vinyards sponsored by Andrew Welch from [nystudio107](https://nystudio107.com/?ref=flatcamp.com) and a whisky tasting sponsored by [Lemonize](https://www.lemonize.de?ref=flatcamp.com). Nobody should feel pressured to participate, there will be more than enough other activities for everyone, and I trust we all know our limits and drink responsibly.
+
+                We'll have a coffee station and there are coffee makers in all the lodges, but I'll be bringing a Chemex and grinder in case anyone has a more refined palette and doesn't want to slum it with regular generic coffee.
+
+                ## Activities
+
+                There's plenty to do, though we are _intentionally_ keeping it simple. There should be some lawn games and outdoor activities like Cornhole and Bocci, some walking/hiking trails out to a nearby pond, and we'll be bringing some social board/card games for those who enjoy them (or in the event of rainy weather — which I'm praying away fervently!)
+
+                We have game rooms, pool tables, hot tubs, big screen tvs for watching sports, and patios and decks for you know, sitting around on, and campfires (sponsored by [Ploi.io](https://ploi.io)) to chat around at night. I _might_ even bring my Super Nintendo so you can try to beat me at Street Fighter II.
+
+                ## Weather
+
+                The [weather in Dobson, NC](https://weather.com/weather/tenday/l/Dobson+NC?canonicalCityId=1ccb6d8a5342fb9ac6d2426e9a01d57906cc19dab4b3a385bf55a7f0fefe60eb) next week looks pretty good so far! Highs in the upper 70s F (~26º C) and lows in the 50s at night (~13º C). So far it looks clear and only partly cloudy, let's hope it stays that way!
+
+                ## What to Bring
+
+                Here's a quick of things to keep in mind for this event specifically. You all know to travel and pack.
+
+                - Casual clothes and footwear — keeping in mind you'll probably be walking on dirt trails and grass
+                - Rain jacket or small umbrella...just in case.
+                - Exercise clothes if you want to join in our Tuesday and Wednesday morning workouts
+                - Room in your suitcase for swag
+                - Any questions or topics you'd like to discuss
+                - If you're traveling from abroad you'll need some outlet adapters to charge your electronics (and if you're using a heating element, like a hair dryer or curler —  make sure they can handle the wattage)
+                - A swim suit if you want to use one of the hot tubs
+                - If you can't sleep without that special pillow, you know what to do.
+                - Bring your laptop _if you want_ — you might not need it, but if you want to show off something you've been working on, have us take a look at something you're stuck on, or if you need to get some work done, feel free. We'll have wifi.
+
+
+                ## What you _don't_ need to bring
+
+                No need to bring towels, bedding, linens, or toilet paper. They've got it all covered. While this is a rustic place, it's still pretty nice.
+
+                ## Transportation
+
+                We have Mercedes busses from [Black Diamond Limousine](https://www.blackdiamondclt.com/) picking everyone up at either the rideshare area of the CLT airport, or out front at the Hilton Garden Inn near the airport. If you need to contact them for any reason, their number is <a href="tel:19807299674">+1 (980) 729-9674</a>.
+
+                They're finalizing the route details this week, so once I have more exact info on pickup times (so you're not standing on the curb for 2 hours), I'll send it out. Our goal is for everyone to arrive around 4pm on Monday so we can have our meet and greets and everyone can find their room and settle in before dinner at 6:30pm.
+
+                ## The Venue
+
+                In the unfortunate event that you encounter travel difficulties and need to arrange your own transportation, here's the address of the venue:
+
+                **Carolina Getaway Cabins**<br>
+                [188 Mountain Escapade Trl, Dobson, NC 27017](https://goo.gl/maps/DLvHCwC3pkKFyZaWA?coh=178573&entry=tt)
+
+                It's about 90 minutes from the Charlotte Airport (CLT). If you end up having to get an Uber or rent a car, please let me know and I'll see what I can do about reimbursing you for the cost.
+
+                ## Special Discord Room
+
+                I set up a **#flat-campers** Discord room so everyone can try to find each other at the airport, meet up if you're getting into Charlotte early, ask questions, and share photos. I invited everyone whose Discord handles worked, so if you're not already in there, can use [this invite link](https://discord.gg/Zaq9cY2j) to join. Please don't share it with anyone not coming to Flat Camp.
+
+                ## Non-US Travelers
+
+                We will have wifi, but if you'd like to use your phone while you're here, you should be able to use an ESIM provider. We've done some research and recommend the following options:
+
+                - [Holafly](https://esim.holafly.com/esim-usa/) – $19 for 5 days and unlimited data. The one downside is you can't tether a device with the unlimited plan.
+                - [Airalo](https://airalo.pxf.io/flatcamp) — starting at $4.50 for 1GB. They have the lowest price and a good track record if you just want to be able to make a few calls and text home. You can also tether a device with this plan.
+
+                ## Emergency Contact
+
+                If something happens, you're running late, have last minute questions, or anything unexpected happens and you need to chat with someone, call or text me personally. Here's my personal cell phone number — I trust you'll guard it wisely.
+
+                <a href="tel:15183691670">+1 (518) 369-1670</a>
+
+                ## Conclusion
+
+                That's all I have for now. I can't wait for this! I've kept some fun stuff secret, so I'm excited to share it with you all.
+
+                I didn't have email addresses for everyone, so if you have co-workers that are coming that didn't get this email, please forward it along (or send them to https://flatcamp.com/one-week). Thanks!
+
+                If you have any questions, please don't hesitate to reach out. I'm 100% focused on Flat Camp from now until it's over.
+                {{ /markdown:indent }}
+              </div>
+            </td>
+            <td></td>
+            </tr>
+        </table>
+        <!-- /body -->
+        <!-- footer -->
+        <table class="footer-wrap">
+          <tr>
+            <td></td>
+            <td class="container">
+              <!-- content -->
+              <div class="content">
+                <table>
+                  <tr>
+                    <td align="center" style="padding-top:100px;padding-bottom:30px;">
+                      <p>You can <a href="::unsubscribeUrl::">unsubscribe</a> if you don't want to get more emails about Flat Camp, but you really shouldn't.</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- /content -->
+            </td>
+            <td></td>
+          </tr>
+        </table>
+        <!-- /footer -->
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

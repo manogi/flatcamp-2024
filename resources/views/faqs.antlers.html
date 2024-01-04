@@ -1,0 +1,34 @@
+<header class="relative">
+    <div class="header-hero pb-12 h-[320px] lg:/h-[300px] lg:pb-24" style="background-position: center center">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <section class="flex flex-col items-center justify-center w-full py-8">
+                <a href="/">
+                    {{ svg src="assets/statamic-logo" width="185" title="Statamic Logo" class="text-ruddy" }}
+                </a>
+                <h1 class="font-hero text-yellow-light mt-10 text-7xl md:text-8xl">Flat Camp EU 2024</h1>
+            </section>
+        </div>
+    </div>
+    {{ svg src="assets/jagged" class="hidden sm:block absolute flip-y bottom-0 text-lace w-full" }}
+    {{ svg src="assets/jagged-sm" class="sm:hidden absolute flip-y bottom-0 text-lace w-full" }}
+</header>
+
+<section class="py-8 md:pt-24 max-w-3xl mx-auto px-5 md:px-6 relative">
+    {{ svg src="assets/dashed-left" class="hidden lg:block text-tan absolute -left-[360px] -top-[115px]" }}
+    <h2 class="text-green text-6xl md:text-7xl font-display text-center tracking-tight relative z-10">Frequently Asked Questions</h2>
+    <div class="py-12 mx-auto leading-loose text-brown text-base flex flex-col space-y-6 relative z-10">
+        {{ faqs }}
+        <div class="bg-tan text-green rounded text-lace px-6 py-4" x-data="{ open: false }">
+            <header class="flex items-center justify-between cursor-pointer" @click="open = ! open">
+                <h2 class="font-bold text-green text-base md:text-xl leading-tight pr-2">{{ question }}</h2>
+                <button  class="transition" :class="{'rotate-90': open }">
+                    {{ svg src="assets/chevron" class="w-8 h-8 opacity-75 hover:opacity-100 text-green" }}
+                </button>
+            </header>
+            <article class="body prose prose-green pt-4" x-cloak x-collapse x-show="open">
+                {{ answer }}
+            </article>
+        </div>
+        {{ /faqs }}
+    </div>
+</section>

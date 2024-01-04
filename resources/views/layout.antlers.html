@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}" class="bg-lace overflow-x-hidden">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title }} | Statamic Flat Camp Retreat</title>
+        <meta name="description" content="Flat Camp is an unforgettable, relationship-focused retreat for the Statamic community set in the Blue Ridge Mountains of North Carolina.">
+        <meta property="og:image" content="/assets/og.jpg" />
+        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+        <link rel="stylesheet" href="https://use.typekit.net/lck1cti.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+        <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+        <script src="//unpkg.com/alpinejs" defer></script>
+    </head>
+    <body class="font-sans relative overflow-x-hidden min-h-screen overscroll-none">
+        {{# <div class="bg-ruddy px-8 py-2 text-center text-yellow">Tickets go on sale to the public on Friday, January 27th at Noon EST!</div> #}}
+        {{ template_content }}
+        {{ unless hide_callout }}
+        <section class="flex mt-16 h-[300px] lg:h-[500px] w-full bg-cover bg-no-repeat bg-bottom relative items-center justify-center" style="background-image: url('/assets/la-borghesiana-wide.jpg');">
+            {{ svg src="/assets/jagged.svg" class="bg-paper hidden sm:block w-full absolute -top-[1px] inset-0 text-lace" alt="" }}
+            {{ svg src="/assets/jagged-sm.svg" class="bg-paper sm:hidden w-full absolute -top-[2px] inset-0 text-lace" alt="" }}
+            <div class="flex flex-col justify-center items-center">
+                <a href="/gallery" class="mt-3 text-center button font-display text-2xl tracking-wide antialiased uppercase inline-block rounded text-white">
+                    <span class="bg-topo absolute inset-0 h-full w-full block text-white z-20"></span>
+                    <span class="px-16 py-4 block">Buy Your Ticket</span>
+                </a>
+            </div>
+        </section>
+        {{ /unless }}
+        <footer class="bg-black text-lace py-6">
+            <div class="max-w-2xl lg:max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-8 tracking-wide antialiased">
+                <div>
+                    <div class="flex items-center text-center md:text-left font-display text-xl lg:text-2xl space-x-3 md:space-x-8">
+                        <a class="hover:text-ruddy" href="/">Details</a>
+                        <a class="hover:text-ruddy" href="/faqs">FAQs</a>
+                        <a class="hover:text-ruddy" href="/code-of-conduct">Code of Conduct</a>
+                        <a class="hover:text-ruddy" href="https://statamic.com">statamic.com</a>
+                    </div>
+                    <p class="text-sm mt-2 text-center md:text-left">&copy; {{ date | format('Y') }} Statamic. All rights reserved. Designed by <a class="text-orange hover:text-tangerine" href="https://jackmcdade.com">Jack McDade</a>.</p>
+                </div>
+            </div>
+        </footer>
+        <div class="absolute z-50 mix-blend-difference w-full h-full inset-0 opacity-50 pointer-events-none" style="background: url('/assets/film-overlay.png') top center repeat; background-size: 1200px"></div>
+        <script src="https://cdn.usefathom.com/script.js" data-site="KEHPVCYS" defer></script>
+    </body>
+</html>

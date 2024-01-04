@@ -1,0 +1,76 @@
+@import url('https://rsms.me/inter/inter.css');
+
+@font-face {
+  font-family: 'GrandsansRough';
+  src:  url('/fonts/Grandsans-Rough.woff2') format('woff2'),
+        url('/fonts/Grandsans-Rough.woff') format('woff');
+}
+
+/* * {
+    outline: 1px red solid;
+} */
+
+.text-shadow {
+    text-shadow: 0 5px 40px rgba(0, 0, 0, 0.40);
+}
+
+.header-hero {
+    @apply bg-[#060606];
+    background-image: url('/assets/italian-countryside.jpg');
+    background-repeat: no-repeat;
+    background-position: right -60px;
+    background-size: 800px;
+}
+
+@screen md {
+    .header-hero {
+        /* background-position: left -60px; */
+        background-size: cover;
+    }
+}
+
+@screen lg {
+    .header-hero {
+        background-position: right -100px;
+        background-size: cover;
+    }
+}
+
+.bg-topo {
+    background-image: url('/assets/topo.png');
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: 260px;
+    @apply mix-blend-multiply;
+}
+
+/* Flippity Floppities
+========================================================================== */
+.flip-x {
+    --tw-scale-x: -1;
+    @apply transform;
+}
+
+.flip-y {
+    --tw-scale-y: -1;
+    @apply transform;
+}
+
+.button {
+    @apply relative transition rounded;
+    background-image: linear-gradient(-35deg, #AB4A18 0%, #FFD692 88%, #FFD793 100%),
+            radial-gradient(circle at 50% 50%, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.43) 85%);
+    box-shadow: 0 12px 6px 7px rgba(0, 0, 0, 0.10), 7px 14px 21px -10px rgba(0, 0, 0, 0.50);
+    &:hover {
+        box-shadow: 0 8px 6px 5px rgba(0, 0, 0, 0.10), 5px 11px 21px -12px rgba(0, 0, 0, 0.50);
+        transform: translateY(2px);
+    }
+    &::after {
+        @apply absolute inset-0 h-full w-full opacity-75 mix-blend-overlay;
+        content: '';
+        background-image: radial-gradient(circle at 50% 50%, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.43) 85%);
+        border-radius: 4px;
+    }
+}
+
+[x-cloak] { display: none; }
