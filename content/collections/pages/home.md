@@ -1,5 +1,5 @@
 ---
-title: Flat Camp 2023
+title: Flat Camp EU 2024
 id: home
 template: home
 blueprint: pages
