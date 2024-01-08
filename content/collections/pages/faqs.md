@@ -31,12 +31,6 @@ faqs:
     type: faq
     enabled: true
   -
-    id: lddfh8r7
-    question: 'Can I see what the various rooms look like?'
-    answer: 'Certainly! The best way to do that would be to watch the [Carolina Getaway Cabins videos](https://www.youtube.com/@carolinagetawaycabins4570) on YouTube. You''ll be able to see full cabin walk-throughs and get a feel for the place.'
-    type: faq
-    enabled: true
-  -
     id: lddfnb4u
     question: 'What airport do I fly into?'
     answer: |-
