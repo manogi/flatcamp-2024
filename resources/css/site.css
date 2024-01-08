@@ -31,6 +31,13 @@
 
 @screen lg {
     .header-hero {
+        background-position: right -100px;
+        background-size: cover;
+    }
+}
+
+@screen xl {
+    .header-hero {
         background-position: right bottom;
         background-size: cover;
     }
