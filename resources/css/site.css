@@ -31,7 +31,7 @@
 
 @screen lg {
     .header-hero {
-        background-position: right -100px;
+        background-position: right bottom;
         background-size: cover;
     }
 }
