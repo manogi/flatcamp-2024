@@ -10,7 +10,7 @@ faqs:
   -
     id: lddf7nih
     question: 'Can I bring my spouse/partner/significant other?'
-    answer: 'Sure! IF your spouse or partner is super into Statamic, you''re more than welcome to bring them and share a King or Queen sized room. We have a special partner rate of $600 per person that includes food, drinks, activities, and swag.'
+    answer: 'Sure! IF your spouse or partner is super into Statamic, you''re more than welcome to bring them and share a King or Queen sized room. We have a special partner rate of 1150€ per person that includes food, drinks, activities, and swag.'
     type: faq
     enabled: true
   -
