@@ -59,7 +59,7 @@ faqs:
     id: lhur7zby
     question: 'Group Communication'
     answer: |-
-      We set up a **#flat-campers** Discord room so everyone can try to find each other at the airport, meet up if you're getting into Charlotte early, ask questions, and share photos.
+      We set up a **#flat-campers** Discord room so everyone can try to find each other at the airport, meet up if you're getting into Rome early, ask questions, and share photos.
 
       If you're not in Discord already, please [join here](https://statamic.com/discord) and DM anyone on the Core Team to gain access.
     type: faq
