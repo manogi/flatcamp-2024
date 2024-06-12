@@ -32,7 +32,7 @@ faqs:
 
       | Time | Activity | Location |
       |---|---|---|
-      | 9am | Breakfast | Dining Area |
+      | 7:30–9:30am | Breakfast | Dining Area |
       | 10:30am | Group Q&A Session | Meeting Room |
       | 1pm | Lunch | Dining Area |
       | 6:30pm | Dinner | Dining Area |
@@ -42,7 +42,7 @@ faqs:
 
       | Time | Activity | Location |
       |---|---|---|
-      | 9am | Breakfast | Dining Area |
+      | 7:30–9:30am | Breakfast | Dining Area |
       | 10:30am | Show & Tell | Meeting Room |
       | 1pm | Lunch | Dining Area |
       | 6:30pm | Dinner | Dining Area |
