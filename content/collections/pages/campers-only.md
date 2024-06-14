@@ -51,8 +51,8 @@ faqs:
 
       | Time | Activity | Location |
       |---|---|---|
-      | 8am | Breakfast | Dining Area |
-      | 11am | Checkout | Front-Desk |
+      | 7:30–9:30am | Breakfast | Dining Area |
+      | 10am | Checkout (of room) | Front-Desk |
     type: faq
     enabled: true
   -
