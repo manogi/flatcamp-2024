@@ -25,7 +25,9 @@
                             <div class="grid gap-4">
                         {{ /if }}
                         <button x-on:click="open = true; url = '{{ url }}'">
-                            <img class="h-auto max-w-full rounded-lg" loading="lazy" src="{{ glide:url preset="thumbnail" }}" alt="">
+                            {{ glide:url preset="thumbnail" }}
+                                <img class="h-auto max-w-full rounded-lg" loading="lazy" src="{{ url }}" width="{{ width }}" height="{{ height }}" alt="">
+                            {{ /glide:url }}
                         </button>
                         {{ if last }}</div>{{ /if }}
                     {{ /chunk }}
