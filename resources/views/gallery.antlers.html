@@ -60,7 +60,7 @@
 
                         <button
                             x-on:click="openModalAt('{{ id }}')"
-                            x-init="addToModal('{{ url }}', '{{ id }}', {{ height }}, {{ height }})"
+                            x-init="addToModal('{{ url }}', '{{ id }}', {{ width }}, {{ height }})"
                         >
                             {{ glide:url preset="thumbnail" }}
                                 <img class="h-auto max-w-full rounded-lg" loading="lazy" src="{{ url }}" width="{{ width }}" height="{{ height }}" alt="">
