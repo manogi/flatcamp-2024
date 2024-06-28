@@ -24,7 +24,7 @@
                         {{ if first }}
                             <div class="grid gap-4">
                         {{ /if }}
-                        <button x-on:click="open = true; url = '{{ url }}'">
+                        <button x-on:click="open = true; url = '{{ url }}'; width = '{{ width }}'; height = '{{ height }}'">
                             {{ glide:url preset="thumbnail" }}
                                 <img class="h-auto max-w-full rounded-lg" loading="lazy" src="{{ url }}" width="{{ width }}" height="{{ height }}" alt="">
                             {{ /glide:url }}
@@ -61,6 +61,8 @@
                 x-on:click.stop
                 x-trap.noscroll.inert="open"
                 :src="url"
+                :width="width"
+                :height="height"
                 class="relative max-w-full max-h-[calc(100vh-64px)] max-w-6xl overflow-y-auto rounded-xl bg-white p-8 shadow-lg"
             />
 
